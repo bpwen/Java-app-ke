@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFF"
+    android:id="@+id/pageerrLayout"
+    tools:context="com.bxsc.app.view_error_layout" >
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_error_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pagefailed_bg"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/animProgress"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    style="@style/loading"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_error_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.0dip"
+                android:lines="2"
+                android:gravity="center"
+                android:text="@string/error_view_loading"
+                android:textColor="#999999"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
